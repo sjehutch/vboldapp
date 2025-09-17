@@ -1,0 +1,113 @@
+BODY
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Sans-Serif
+}
+A:link
+{
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #0000ff
+}
+A:visited
+{
+    COLOR: #800080
+}
+H1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 55%;
+    MARGIN-BOTTOM: -2.2em
+}
+LI
+{
+    MARGIN-TOP: 4pt
+}
+UL LI
+{
+    PADDING-TOP: 4pt
+}
+OL LI
+{
+    PADDING-BOTTOM: 4pt
+}
+UL
+{
+    MARGIN-TOP: -7em;
+    MARGIN-LEFT: -15pt
+}
+OL
+{
+    MARGIN-TOP: -7em;
+    MARGIN-LEFT: -15pt
+}
+OL UL
+{
+    MARGIN-TOP: 0em;
+    LIST-STYLE-TYPE: disc
+}
+CODE
+{
+    FONT-FAMILY: Courier
+}
+PRE
+{
+    FONT-FAMILY: Courier
+}
+TABLE
+{
+    FONT-SIZE: 12px;
+    WIDTH: auto;
+    TEXT-ALIGN: left
+}
+TH
+{
+    TEXT-ALIGN: left
+}
+TD
+{
+    MARGIN-RIGHT: 0em
+}
+IMG
+{
+    MARGIN-TOP: -4pt
+}
+H5.overh
+{
+    FONT-SIZE: 120%
+}
+H5
+{
+    FONT-SIZE: 100%
+}
+H5.proch
+{
+    FONT-SIZE: 100%
+}
+H5.what
+{
+    FONT-SIZE: 100%;
+    COLOR: #993399
+}
+H5.note
+{
+    FONT-SIZE: 95%
+}
+.SectionTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: Verdana, Arial;
+    TEXT-DECORATION: underline
+}
+.RedText
+{
+    FONT-SIZE: 10pt;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Sans-Serif
+}
+.BlueText
+{
+    FONT-SIZE: 10pt;
+    COLOR: blue;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Sans-Serif
+}

@@ -1,0 +1,26 @@
+HKCR
+{
+	Dpcalc.ShootingLine.1 = s 'ShootingLine Class'
+	{
+		CLSID = s '{A11B8F6C-BBA7-46ba-9250-358350DF9ABA}'
+	}
+	Dpcalc.ShootingLine = s 'ShootingLine Class'
+	{
+		CLSID = s '{A11B8F6C-BBA7-46ba-9250-358350DF9ABA}'
+		CurVer = s 'Dpcalc.ShootingLine.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A11B8F6C-BBA7-46ba-9250-358350DF9ABA} = s 'ShootingLine Class'
+		{
+			ProgID = s 'Dpcalc.ShootingLine.1'
+			VersionIndependentProgID = s 'Dpcalc.ShootingLine'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{0205C1E4-C47B-4000-A6EB-6AC5AAB10F11}'
+		}
+	}
+}

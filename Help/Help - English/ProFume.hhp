@@ -1,0 +1,14 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Fumiguide Help.chm
+Contents file=toc.hhc
+Default Font=Arial,9,1
+Default topic=about.htm
+Display compile progress=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=ProFume* Gas Fumigant Fumiguide* Help
+
+
+[INFOTYPES]
+

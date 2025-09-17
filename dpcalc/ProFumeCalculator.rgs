@@ -1,0 +1,26 @@
+HKCR
+{
+	Dpcalc.ProFumeCalculator.1 = s 'ProFumeCalculator Class'
+	{
+		CLSID = s '{45DD8AD9-D339-4A0B-B6FE-260433177DD6}'
+	}
+	Dpcalc.ProFumeCalculator = s 'ProFumeCalculator Class'
+	{
+		CLSID = s '{45DD8AD9-D339-4A0B-B6FE-260433177DD6}'
+		CurVer = s 'Dpcalc.ProFumeCalculator.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {45DD8AD9-D339-4A0B-B6FE-260433177DD6} = s 'ProFumeCalculator Class'
+		{
+			ProgID = s 'Dpcalc.ProFumeCalculator.1'
+			VersionIndependentProgID = s 'Dpcalc.ProFumeCalculator'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{0205C1E4-C47B-4000-A6EB-6AC5AAB10F11}'
+		}
+	}
+}

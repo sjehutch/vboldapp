@@ -1,0 +1,4 @@
+     0:NGN Error: Could not get server path
+     0:Could not Start Server err=-27
+   520:NGN Error: Could not get server path
+    40:Could not Start Server err=-27

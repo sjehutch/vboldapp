@@ -1,0 +1,745 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "dpcalc"
+    IDS_CONFUSED_FLOUR_BEETLE "Tribolium confusum"
+    IDS_RED_FLOUR_BEETLE    "Tribolium castaneum"
+    IDS_SAWTOOTHED_GRAIN_BEETLE "Oryzaephilus surinamensis"
+    IDS_WAREHOUSE_BEETLE    "Trogoderma variabile"
+    IDS_INDIAN_MEAL_MOTH    "Plodia interpunctella"
+    IDS_MEDITERRANEAN_FLOUR_MOTH "Ephestia kuehniella"
+    IDS_CODLING_MOTH        "Cydia pomonella"
+    IDS_NAVEL_ORANGEWORM    "Amyelois transitella"
+    IDS_OTHER_BEETLE        "andere Käfer"
+    IDS_OTHER_MOTH          "andere Motten"
+    IDS_HIGH_CONC_ERROR     "Fehler: Konzentration ist höher als zulässig. Bitte die Einwirkzeit verlängern und/oder erwartete HWT ändern."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALID_PEST        "Fehler: Ungültiger Schädling. Die Eingabe muß zwischen %d und %d sein."
+    IDS_INVALID_LIFE_STAGE  "Fehler: Ungültiges Lebensstadium. Die Eingabe muß zwischen %d oder %d sein."
+    IDS_INVALID_HLT         "Fehler: Ungültige HWT. Der Wert muß größer als %0.0f sein."
+    IDS_INVALID_TEMP        "Fehler: Ungültige Temperatur. Der Wert muß zwischen %0.2f und %0.2f sein."
+    IDS_INVALID_TIME        "Fehler: Ungültige Zeit. Der Wert muß größer als oder gleich mit %d sein."
+    IDS_INVALID_VOLUME      "Fehler: Ungültiges Volumen. Der Wert muß größer sein oder gleich mit %0.0f"
+    IDS_INVALID_TREATMENT_TYPE 
+                            "Fehler: Ungültige Begasungsart. Die Eigabe muß %d oder %d sein."
+    IDS_WARNING_CM_EGGS     "Warnung: Eier der 'Codling Moth' kein relevanter Schädling."
+    IDS_WARNING_NOW_EGGS    "Warnung: Eier  'Navel Orange Worm' kein relevanter Schädling."
+    IDS_WARNING_MIN_PEST_TEMP 
+                            "Warnung: Temperatur unterhalb der Berechnungsgrenze. Bekämpfungserfolg evtl. nicht optimal."
+    IDS_INVALID_CYLINDER_TEMP 
+                            "Fehler: Ungültige Gasflaschentemperatur. Der Wert muß zwischen %0.2f und %0.2f sein."
+    IDS_INVALID_HOSE_LENGTH "Fehler: Ungültige Leitungslänge. Der Wert muß zwischen %0.0f und %0.0f sein."
+    IDS_INVALID_HOSE_DIAMETER 
+                            "Fehler: Ungültiger Leitungs-Innedurchmesser. Der Wert muß %0.3f, %0.3f oder %0.3f sein."
+    IDS_WARNING_MAX_SHOOTING_RATE_LOW 
+                            "Warnung: Maximale Eingasungsrate ist 0 kg/min. Bitte die Luftfeuchtigkeit absenken, oder Ventilatorkapazität erhöhen."
+    IDS_INVALID_FAN_CAPACITY 
+                            "Fehler: Ungültige Ventilatorkapazität. Der Wert muß zwischen %0.2f und %0.2f sein."
+    IDS_INVALID_RELATIVE_HUMIDITY 
+                            "Fehler: Ungültige Luftfeuchtigkeit. Der Wert muß zwischen %0.0f und 0.0f sein."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WARNING_SHOOTING_RATE_LOW 
+                            "Warnung: Die Kombination der eingegebenen Werte für Gasflaschentemperatur, Innendurchmesser und Länge der Eingasungsleitung führt zu einer sehr geringen Eingasungsrate des Begasungsmittels, welche nicht genau bestimmt werden kann. Um die Eingasungsrate zu erhöhen verkürzen Sie die Länge und / oder den Innendurchmesser der Eingasungsleitung."
+    IDS_WARNING_CO_EXCEEDED "Warnung: Die errechnete anfängliche Ziel-Konzentration übersteigt die maximal zulässige Konzentration von 128 g/m³ (oder oz/MCF). Das Fumiguide Programm ist begrenzt auf 128 g/m³ (oz/MCF) als Anfangskonzentration. Sie können die Temperatur erhöhen, Einwirkzeit und/oder HWT verlängern und die Eingaben neu berechnen, wenn Sie nicht die maximalen Anfangskonzentration 128 g/m³ (oz/MCF) verwenden wollen. "
+    IDS_WARNING_CT_EXCEEDED "Warnung: das errechnete anfänglich angestrebte CT-Produkt übersteigt die maximal zulässige Konzentration von %0.0f g-h/m³ (oz-hr/MCF). Das Fumiguide Programm ist begrenzt auf %0.0f g-h/m³ (oz-hr/MCF). Sie können die Temperatur erhöhen oder ändern die zu bekämpfenden Schädlinge und berechnen neu, wenn Sie nicht die %0.0f g-h/m³ (oz.hr/MCF) einsetzen wollen."
+    IDS_WARNING_CO_CT_EXCEEDED 
+                            "Warnung: Die berechnete anfänglich angestrebte Konzentration und das CT-Produkt übersteigen den maximal zulässigen Wert von 128 g/m³ (oz/MCF) und %0.0f g-h/m³ (g-hr/MCF). Das Fumiguide Programm ist begrenzt auf 128 g/m³ (oz/MCF) und %0.0f g-h/m³ (oz-hr/MCF) als Anfangswerte. Sie können die Temperatur anheben, die Einwirkzeit und /oder HWT verlängern, die zu bekämpfenden Schädlinge ändern und dann neu berechnen, wenn Sie nicht mit diesen Grenzwerten arbeiten wollen."
+    IDS_INVALID_CONC_TIME   "Fehler: CT-Produkt muß größer oder gleich 0 sein."
+    IDS_INVALID_DOSE        "Fehler: Dosis muß größer oder gleich 0 sein."
+    IDS_INVALID_FUMIGATION_TYPE 
+                            "Fehler: Ungültige Begasungsart. Die Eigabe muß %d oder %d sein."
+    IDS_WALNUTS             "Walnüsse"
+    IDS_ALMONDS             "Mandeln"
+    IDS_FIGS                "Feigen"
+    IDS_FILBERTS_HAZELNUTS  "Haselnüsse"
+    IDS_PISTACHIOS          "Pistazien"
+    IDS_PRUNES              "Pflaumen"
+    IDS_RAISINS             "Rosinen"
+    IDS_GRANARY_WEEVIL      "Sitophilus granarius"
+    IDS_WHOLE_GRAIN         "Getreide"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NONE                "Keine"
+    IDS_INVALID_COMMODITY   "Fehler: Ungültiges Vorratsgut. Die Eingabe muß zwischen %d und %d sein."
+    IDS_SPACE               "Raum"
+    IDS_COMMODITY           "Vorratsgüter"
+    IDS_LARVE_PUPAE_ADULT   "Niedrig"
+    IDS_EGG_ALL             "Hoch"
+    IDS_NORMAL_ATMOSPHERIC_PRESSURE "Normaler Luftdruck"
+    IDS_VACUUM              "Vakuum"
+    IDS_RICE_WEEVIL         "Sitophilus oryzae"
+    IDS_OTHER_COMMODITY     "Andere"
+    IDS_INVALID_ONEFOURTH_LENGTH 
+                            "Fehler: Ungültige Eingabe für Länge bei 6mm ID. Der wert muß zwischen %0.0f und %0.0f liegen."
+    IDS_INVALID_ONEEIGHT_LENGTH 
+                            "Fehler: Ungültige Eingabe für Länge bei 3mm ID. Der wert muß zwischen %0.0f und %0.0f liegen."
+    IDS_LESSER_GRAIN_BORER  "Rhizopertha dominica"
+    IDS_INVALID_CYLINDER_PRES 
+                            "Fehler: Ungültige Eingabe Gasflaschen-Druck. Der Wert muß zwischen %0.2f und %0.2f liegen."
+    IDS_HIDE_BEETLE         "Dermestes maculatus"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DRUG_STORE_BEETLE   "Stegobium paniceum"
+    IDS_RUSTY_GRAIN_BEETLE  "Cryptolestes ferrugineus"
+    IDS_ALMOND_MOTH         "Ephestia cautella"
+    IDS_RODENTS             "Nagetiere (nicht zugelassen in Europa)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CIGARETTE_BEETLE    "Lasioderma serricorne"
+    IDS_COWPEA_WEEVIL       "Callosobruchus obtectus"
+    IDS_BEAN_WEEVIL         "Acanthoscelides obtetus  "
+    IDS_COCA_MOTH           "Ephestia elutella"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "1 TYPELIB ""dpcalc.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,2,526,0
+ PRODUCTVERSION 2,2,526,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "dpcalc Module\0"
+            VALUE "FileVersion", "2, 2, 526, 0\0"
+            VALUE "InternalName", "dpcalc\0"
+            VALUE "LegalCopyright", "Copyright 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "dpcalc.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "dpcalc Module\0"
+            VALUE "ProductVersion", "2, 2, 526, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_PROFUMECALCULATOR   REGISTRY MOVEABLE PURE  "ProFumeCalculator.rgs"
+IDR_SHOOTINGLINE        REGISTRY MOVEABLE PURE  "ShootingLine.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "dpcalc"
+    IDS_CONFUSED_FLOUR_BEETLE "Confused Flour Beetle(Tribolium confusum)"
+    IDS_RED_FLOUR_BEETLE    "Red Flour Beetle(Tribolium castaneum)"
+    IDS_SAWTOOTHED_GRAIN_BEETLE 
+                            "Sawtoothed Grain Beetle(Oryzaephilus surinamensis)"
+    IDS_WAREHOUSE_BEETLE    "Warehouse Beetle(Trogoderma variabile)"
+    IDS_INDIAN_MEAL_MOTH    "Indian Meal Moth(Plodia interpunctella)"
+    IDS_MEDITERRANEAN_FLOUR_MOTH 
+                            "Mediterranean Flour Moth(Ephestia kuehniella)"
+    IDS_CODLING_MOTH        "Codling Moth(Cydia pomonella)"
+    IDS_NAVEL_ORANGEWORM    "Navel Orangeworm(Amyelois transitella)"
+    IDS_OTHER_BEETLE        "Other Beetle"
+    IDS_OTHER_MOTH          "Other Moth"
+    IDS_HIGH_CONC_ERROR     "Error: Concentration is higher than allowable.  Please increase exposure time and/or estimated HLT."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALID_PEST        "Error: Invalid pest.  The value must be between %d and %d."
+    IDS_INVALID_LIFE_STAGE  "Error: Invalid life stage.  The value must be %d or %d."
+    IDS_INVALID_HLT         "Error: Invalid HLT.  The value must be greater than %0.0f."
+    IDS_INVALID_TEMP        "Error: Invalid temperature.  The value must be between %0.2f and %0.2f."
+    IDS_INVALID_TIME        "Error: Invalid time.  The value must be greater than or equal to %d."
+    IDS_INVALID_VOLUME      "Error: Invalid volume.  The value must be greater than or equal to %0.0f."
+    IDS_INVALID_TREATMENT_TYPE 
+                            "Error: Invalid treatment type.  The value must be %d or %d."
+    IDS_WARNING_CM_EGGS     "Warning: Codling Moth eggs not a target of fumigation."
+    IDS_WARNING_NOW_EGGS    "Warning: Navel Orangeworm eggs not a target of fumigation."
+    IDS_WARNING_MIN_PEST_TEMP 
+                            "Warning: Temperature is not ideal for fumigation, control may not be optimal."
+    IDS_INVALID_CYLINDER_TEMP 
+                            "Error: Invalid cylinder temperature.  The value must be between %0.2f and %0.2f."
+    IDS_INVALID_HOSE_LENGTH "Error: Invalid hose length.  The value must be between %0.0f and %0.0f."
+    IDS_INVALID_HOSE_DIAMETER 
+                            "Error: Invalid hose inside diameter.  The value must be %0.3f, %0.3f, or %0.3f."
+    IDS_WARNING_MAX_SHOOTING_RATE_LOW 
+                            "Warning:  Maximum shooting rate is 0 lbs/min (kg/min).  Please lower the relative humidity or increase the fan capacity."
+    IDS_INVALID_FAN_CAPACITY 
+                            "Error: Invalid fan capacity.  The value must be between %0.2f and %0.2f."
+    IDS_INVALID_RELATIVE_HUMIDITY 
+                            "Error: Invalid relative humidity.  The value must be between %0.0f and %0.0f."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WARNING_SHOOTING_RATE_LOW 
+                            "Warning:  The combination of values entered for Cylinder Temperature, Introduction Line Inside Diameter, and Introduction Line Length resulted in a very slow rate of ProFume introduction which cannot be accurately estimated.  Increase the inside diameter or shorten the length of the introduction line to increase the rate of ProFume introduction."
+    IDS_WARNING_CO_EXCEEDED "Warning: Initial target concentration calculated exceeds maximum permitted concentration of 128 oz/MCF (g/cu m).  The Fumiguide has defaulted to 128 oz/MCF (g/cu m) as the initial target concentration.  You may increase temperature, lengthen exposure period or HLT and recalculate if you do not want to use the 128 oz/MCF (g/cu m) default."
+    IDS_WARNING_CT_EXCEEDED "Warning: Initial target CT calculated exceeds maximum permitted concentration of %0.0f oz-hr/MCF (g-hr/cu m).  The Fumiguide has defaulted to %0.0f oz-hr/MCF (g-hr/cu m).  You may increase temperature or change the target insect(s) and recalculate if you do not want to use the %0.0f oz-hr/MCF (g-hr/cu m) default."
+    IDS_WARNING_CO_CT_EXCEEDED 
+                            "Warning: Initial target concentration and CT calculated exceeds maximum permitted limits of 128 oz/MCF (g/cu m) and %0.0f oz-hr/MCF (g-hr/cu m).  The Fumiguide has defaulted to 128 oz/MCF (g/cu m) and %0.0f oz-hr/MCF (g-hr/cu m) as the initial targets.  You may increase temperature, lengthen exposure period or HLT, or change target insect(s) and recalculate if you do not want to use these defaults."
+    IDS_INVALID_CONC_TIME   "Error:  Concentration-Time must be greater than or equal to 0."
+    IDS_INVALID_DOSE        "Error:  Dose must be greater than or equal to 0."
+    IDS_INVALID_FUMIGATION_TYPE 
+                            "Error: Invalid fumigation type.  The value must be %d or %d."
+    IDS_WALNUTS             "Walnuts"
+    IDS_ALMONDS             "Almonds"
+    IDS_FIGS                "Figs (dried)"
+    IDS_APRICOTS_DRIED      "Apricots (dried)"
+    IDS_PISTACHIOS          "Pistachios"
+    IDS_CACAO               "Cacao"
+    IDS_RAISINS             "Raisins"
+    IDS_GRANARY_WEEVIL      "Granary Weevil(Sitophilus granarius)"
+    IDS_COFFEE              "Coffee"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NONE                "None"
+    IDS_INVALID_COMMODITY   "Error: Invalid commodity.  The value must be between %d and %d."
+    IDS_SPACE               "Space"
+    IDS_COMMODITY           "Commodity"
+    IDS_LARVE_PUPAE_ADULT   "Low"
+    IDS_EGG_ALL             "High"
+    IDS_NORMAL_ATMOSPHERIC_PRESSURE "Normal Atmospheric Pressure"
+    IDS_VACUUM              "Vacuum"
+    IDS_RICE_WEEVIL         "Rice Weevil(Sitophilus oryzae)"
+    IDS_CORN                "Corn"
+    IDS_INVALID_ONEFOURTH_LENGTH 
+                            "Error: Invalid one fourth length.  The value must be between %0.0f and %0.0f."
+    IDS_INVALID_ONEEIGHT_LENGTH 
+                            "Error: Invalid one eight length.  The value must be between %0.0f and %0.0f."
+    IDS_LESSER_GRAIN_BORER  "Lesser Grain Borer(Rhizopertha dominica)"
+    IDS_INVALID_CYLINDER_PRES 
+                            "Error: Invalid cylinder pressure. The value must be between %0.2f and %0.2f."
+    IDS_HIDE_BEETLE         "Hide Beetle(Dermestes maculatus)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DRUG_STORE_BEETLE   "Drugstore beetle (Stegobium paniceum)\n"
+    IDS_RUSTY_GRAIN_BEETLE  "Rusty Grain Beetle(Cryptolestes ferrugineus)"
+    IDS_ALMOND_MOTH         "Almond Moth(Ephestia cautella)"
+    IDS_RODENTS             "Rodents (not authorised in Europe) "
+    IDS_COWPEA              "Cowpea"
+    IDS_DATES               "Dates"
+    IDS_OTHER_DRIED_FRUIT   "Other dried fruits"
+    IDS_OTHER_GRAIN         "Other grains"
+    IDS_OTHER_LEGUME        "Other legumes"
+    IDS_OTHER_NUTS          "Other nuts"
+    IDS_PECANS              "Pecans"
+    IDS_PLUMS_DRIED         "Plums (dried)"
+    IDS_POPCORN             "Popcorn"
+    IDS_RICE_POLISHED       "Rice (polished)"
+    IDS_RICE_ROUGH          "Rice (rough)"
+    IDS_SOYBEAN             "Soybean"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WHEAT               "Wheat"
+    IDS_INVALID_LOAD_FACTOR "Error: Invalid Load Factor.  The value must be greater than %0.0f."
+    IDS_CIGARETTE_BEETLE    "Cigarette Beetle(Lasioderma serricorne)"
+    IDS_COWPEA_WEEVIL       "Cowpea wheevil (Callosobruchus obtectus)"
+    IDS_BEAN_WEEVIL         "Bean Weevil(Acanthoscelides obtectus)"
+    IDS_COCA_MOTH           "Cocoa Moth(Ephestia elutella)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Castilian) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "dpcalc"
+    IDS_CONFUSED_FLOUR_BEETLE "Gorgojo confuso de la harina"
+    IDS_RED_FLOUR_BEETLE    "Gorgojo castaño de la harina"
+    IDS_SAWTOOTHED_GRAIN_BEETLE "Carcoma dentada de los granos"
+    IDS_WAREHOUSE_BEETLE    "Escarabajo de almacén"
+    IDS_INDIAN_MEAL_MOTH    "Polilla bandeada"
+    IDS_MEDITERRANEAN_FLOUR_MOTH "Polilla gris"
+    IDS_CODLING_MOTH        "Carpocapsa"
+    IDS_NAVEL_ORANGEWORM    "Gusano de la naranja Navel"
+    IDS_OTHER_BEETLE        "Otros coleópteros"
+    IDS_OTHER_MOTH          "Otras orugas"
+    IDS_HIGH_CONC_ERROR     "Error. La concentración es superior a la admisible.\nPor favor, aumente el tiempo de exposición y/o TPM estimado."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALID_PEST        "Error. Plaga no válida. El valor debe estar entre %d y %d."
+    IDS_INVALID_LIFE_STAGE  "Error. Estadío de la plaga no válido. El valor debe ser %d o %d."
+    IDS_INVALID_HLT         "Error. TPM no válido. El valor debe ser mayor que %0.0f."
+    IDS_INVALID_TEMP        "Error. Temperatura no válida. El valor debe estar entre %0.2f y %0.2f."
+    IDS_INVALID_TIME        "Error. Tiempo no válido. El valor debe ser mayor o igual que %d."
+    IDS_INVALID_VOLUME      "Error. Volumen no válido. El valor debe ser mayor o igual que $0.0f."
+    IDS_INVALID_TREATMENT_TYPE 
+                            "Error. Tipo de tratamiento no válido. El valor debe ser %d o %d."
+    IDS_WARNING_CM_EGGS     "Aviso: Huevos de Caropcapsa no son objetivo de la fumigación"
+    IDS_WARNING_NOW_EGGS    "Aviso: Huevos de Gusano de la naranja Navel no son objetivo de la fumigación"
+    IDS_WARNING_MIN_PEST_TEMP 
+                            "Aviso: Temperatura por debajo del rango de cálculo, el control puede no ser óptimo."
+    IDS_INVALID_CYLINDER_TEMP 
+                            "Error: Temperatura del cilindro no válida. El valor debe estar entre %0.2f y %0.2f."
+    IDS_INVALID_HOSE_LENGTH "Error: Longitud de manguera no valida. El valor debe estar entre %0.0f y %0.0f."
+    IDS_INVALID_HOSE_DIAMETER 
+                            "Error: Diámetro interior de manguera no válido. El valor debe ser %0.3f, %0.3f o %0.3f."
+    IDS_WARNING_MAX_SHOOTING_RATE_LOW 
+                            "Aviso: La tasa máxima de introducción es lbs/min (kg/min). Por favor, disminuya la humedad relativa o aumente la capacidad del ventilador."
+    IDS_INVALID_FAN_CAPACITY 
+                            "Error: Capacidad del ventilador no válida. El valor debe estar entre %0.2f y %0.2f."
+    IDS_INVALID_RELATIVE_HUMIDITY 
+                            "Error: Humedad relativa no válida. El valor debe estar entre %0.0f y %0.0f."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WARNING_SHOOTING_RATE_LOW 
+                            "Aviso: La combinación de valores introducidos para Temperatura del Cilindro, Diámetro Interior de la Línea de Introducción, y Longitud de la línea de Introducción determinan una tasa de introducción de ProFume muy lenta, que no puede ser calculada con precisión. Aumente el diámetro interior o disminuya la longitud de la línea de introducción para aumentar la tasa de introducción de ProFume."
+    IDS_WARNING_CO_EXCEEDED "Aviso: La concentración inicial objetivo calculada excede la concentración máxima permitida de 128 oz/MCF (g/cum). Fumiguide ha establecido por defecto 128 oz/MCF (g/cum) como la concentración inicial objetivo. Puede aumentar la temperatura, tiempo de exposición o TPM y recalcular si no quere usar la concentración de 128 oz/MCF (g/cum) establecida por defecto."
+    IDS_WARNING_CT_EXCEEDED "Aviso: El valor CT inicial objetivo excede de la concentración máxima permitida de %0.0 oz-hr/MCF (g-hr/cu m). Fumiguide ha establecido por defecto %0.0 oz-hr/MCF (g-hr/cu m). Puede aumentar la temperatura o cambiar la(s) plaga(s) objetivo si no quiere usar el valor %0.0 oz-hr/MCF (g-hr/cu m) establecido por defecto."
+    IDS_WARNING_CO_CT_EXCEEDED 
+                            "Aviso: La concentración inicial objetivo y el valor CT calculado exceden los límites máximos permitidos de 128 oz/MCF (g/cum) y %0.0f oz-hr/MCF (g-hr/cu m). Fumiguide ha establecido por defecto los valores de128 oz/MCF (g/cum) y %0.0f oz-hr/MCF (g-hr/cu m) como objetivo inicial. Puede incrementar la temperatura, aumentar el periodo de exposición o el TPM, o cambiar plaga(s) objetivo y recalcular si no quiere utilizar los valores establecidos por defecto."
+    IDS_INVALID_CONC_TIME   "Error: Concentración x Tiempo debe ser mayor o igual que 0."
+    IDS_INVALID_DOSE        "Error: La dosis debe ser mayor o igual que 0."
+    IDS_INVALID_FUMIGATION_TYPE 
+                            "Error: Tipo de fumigación no válido. El valor debe ser %d o %d."
+    IDS_WALNUTS             "Nueces"
+    IDS_ALMONDS             "Almendras"
+    IDS_FIGS                "Higos (secos)"
+    IDS_APRICOTS_DRIED      "Albaricoques (secos)"
+    IDS_PISTACHIOS          "Pistachos"
+    IDS_CACAO               "Cacao"
+    IDS_RAISINS             "Pasas"
+    IDS_GRANARY_WEEVIL      "Gorgojo de los graneros"
+    IDS_COFFEE              "Café"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NONE                "Ninguno"
+    IDS_INVALID_COMMODITY   "Error: Producto no válido. El valor debe estar entre %d y %d."
+    IDS_SPACE               "Espacio"
+    IDS_COMMODITY           "Producto"
+    IDS_LARVE_PUPAE_ADULT   "Bajo"
+    IDS_EGG_ALL             "Alto"
+    IDS_NORMAL_ATMOSPHERIC_PRESSURE "Presión atmosférica normal"
+    IDS_VACUUM              "Vacío"
+    IDS_RICE_WEEVIL         "Gorgojo del arroz"
+    IDS_CORN                "Maíz"
+    IDS_INVALID_ONEFOURTH_LENGTH 
+                            "Error: Longitud de un cuarto no válida. El valor debe estar entre %0.0f y %0.0f."
+    IDS_INVALID_ONEEIGHT_LENGTH 
+                            "Error: Longitud de un octavo no válida. El valor debe estar entre %0.0f y %0.0f."
+    IDS_LESSER_GRAIN_BORER  "Capuchino"
+    IDS_INVALID_CYLINDER_PRES 
+                            "Error: Presión del cilindro no válida. El valor debe estar entre %0.2f y %0.2f."
+    IDS_HIDE_BEETLE         "Gorgojo de las despensas"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DRUG_STORE_BEETLE   "Gorgojo del pan"
+    IDS_RUSTY_GRAIN_BEETLE  "Carcoma del grano"
+    IDS_ALMOND_MOTH         "Polilla de la almendra"
+    IDS_RODENTS             "Roedores"
+    IDS_COWPEA              "Judía de careta"
+    IDS_DATES               "Dátiles"
+    IDS_OTHER_DRIED_FRUIT   "Otros frutos desecados"
+    IDS_OTHER_GRAIN         "Otros granos"
+    IDS_OTHER_LEGUME        "Otras leguminosas"
+    IDS_OTHER_NUTS          "Otros frutos secos"
+    IDS_PECANS              "Nueces de pecán"
+    IDS_PLUMS_DRIED         "Ciruelas (desecadas)"
+    IDS_POPCORN             "Palomitas de maíz"
+    IDS_RICE_POLISHED       "Arroz (pulido)"
+    IDS_RICE_ROUGH          "Arroz (sin pulir)"
+    IDS_SOYBEAN             "soja"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WHEAT               "Trigo"
+    IDS_INVALID_LOAD_FACTOR "Error: Factor de Carga no válido. El valor debe ser mayor que %0.0f."
+    IDS_CIGARETTE_BEETLE    "Escarabajo del tabaco"
+    IDS_COWPEA_WEEVIL       "Gorgojo de la judía de careta"
+    IDS_BEAN_WEEVIL         "Gorgojo de las judías"
+    IDS_COCA_MOTH           "Polilla del cacao"
+END
+
+#endif    // Spanish (Castilian) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "dpcalc"
+    IDS_CONFUSED_FLOUR_BEETLE "Tribolium confusum"
+    IDS_RED_FLOUR_BEETLE    "Tribolium castaneum"
+    IDS_SAWTOOTHED_GRAIN_BEETLE "Oryzaephilus surinamensis"
+    IDS_WAREHOUSE_BEETLE    "Trogoderma variabile"
+    IDS_INDIAN_MEAL_MOTH    "Plodia interpunctella"
+    IDS_MEDITERRANEAN_FLOUR_MOTH "Ephestia kuehniella"
+    IDS_CODLING_MOTH        "Cydia pomonella"
+    IDS_NAVEL_ORANGEWORM    "Amyelois transitella"
+    IDS_OTHER_BEETLE        "Autre coléoptère"
+    IDS_OTHER_MOTH          "Autre Lépidoptère"
+    IDS_HIGH_CONC_ERROR     "Erreur, la concentration dépasse la concentration autorisée. SVP augmenter la durée d'exposition ou la 1/2 Perte. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALID_PEST        "Erreur:choix d'insecte non conforme. la valeur doit se situer entre  %d ou %d."
+    IDS_INVALID_LIFE_STAGE  "Erreur: Choix de stade non conforme. la valeur doit se situer entre  %d ou %d."
+    IDS_INVALID_HLT         "Erreur: Valeur de 1/2 Perte non conforme. La valeur doit être plus grande que %0.0f."
+    IDS_INVALID_TEMP        "Erreur: Température non conforme. La valeur doit se situer entre %0.2f et %0.2f."
+    IDS_INVALID_TIME        "Erreur: durée non conforme. La valeur doit être supérieure ou égale à %d. "
+    IDS_INVALID_VOLUME      "Erreur: Volume non conforme. La valeur doit être supérieure ou égale à %0.0f."
+    IDS_INVALID_TREATMENT_TYPE 
+                            "Erreur: type de traitement non-conforme. La valeur doit être %d ou %d. \n"
+    IDS_WARNING_CM_EGGS     "Avertissement: Les œufs de Carpocapse ne peuvent être une cible de fumigation"
+    IDS_WARNING_NOW_EGGS    "Avertissement: Les œufs de Ver de l'Orange ne peuvent être une cible de fumigation"
+    IDS_WARNING_MIN_PEST_TEMP 
+                            "Avertissement: La température se situe en dessous des valeurs utilisées dans les calculs. L'efficacité risque de ne pas être optimale."
+    IDS_INVALID_CYLINDER_TEMP 
+                            "Erreur: Température de bouteille non conforme. La valeur doit se situer entre %0.2f et %0.2f."
+    IDS_INVALID_HOSE_LENGTH "Erreur : Longueur de ligne non conforme. la valeur doit se situer entre %0.0f et %0.0f."
+    IDS_INVALID_HOSE_DIAMETER 
+                            "Erreur: Diamètre de ligne non conforme. la valeur doit être %0.3f, %0.3f,ou %0.3f."
+    IDS_WARNING_MAX_SHOOTING_RATE_LOW 
+                            "Avertissement: La valeur maximale de débit d'injection est 0 Kg/min (0 lbs/min).SVP diminuer l'humidité relative ou augmenter le débit des ventilateurs. "
+    IDS_INVALID_FAN_CAPACITY 
+                            "Erreur: débit de ventilateur non conforme. La valeur doit se situer entre %0.2f and %0.2f."
+    IDS_INVALID_RELATIVE_HUMIDITY 
+                            "Erreur: Humidité relative non conforme. La valeur doit se situer entre %0.0f et %0.0f."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WARNING_SHOOTING_RATE_LOW 
+                            "Avertissement: La combinaison de valeurs saisies pour la température de bouteille, le diamètre intérieur de la Ligne d'Injection,et la Longueur de la ligne d'Injection a pour résultat un débit très lent d'introduction de ProFume qui ne peut pas être estimé précisément. Augmenter le diamètre intérieur ou raccourcir la ligne d'injection pour augmenter le débit d'injection de ProFume."
+    IDS_WARNING_CO_EXCEEDED "Avertissement: la concentration initiale calculée dépasse la  concentration autorisée de 128 g/m3 (oz/MCF).  Le Fumiguide a pris par défaut la valeur de 128 g/m3(oz/MCF) comme la concentration initiale cible. Vous pouvez augmenter la température, allonger la durée d'exposition ou la 1/2 Perte et recalculer si vous ne voulez pas utiliser la valeur par défaut de 128 g/m3 (oz/MCF). "
+    IDS_WARNING_CT_EXCEEDED "Avertissement: l'objectif de CT calculé dépasse le CT maximum autorisé de %0.0f g-h/m3 (oz-h /MCF). Le Fumiguide a pris par défaut la valeur de %0.0f g-h/m3 (oz-h /MCF). Vous pouvez augmenter la température ou changer l'(les) insecte(s) cible(s)  et recalculer si vous ne voulez pas utiliser la valeur par défaut de %0.0f g-h/m3 (oz-h /MCF)."
+    IDS_WARNING_CO_CT_EXCEEDED 
+                            "Avertissement: les objectifs de concentration initiale et de CT calculés dépassent  la  concentration autorisée de 128 g/m3 (oz/MCF) et le CT maximum autorisé de %0.0f g-h/m3 (oz-h /MCF). Le Fumiguide a pris par défaut les valeurs cibles  de 128 g/m3 (oz/MCF)  et de %0.0f g-h/m3 (oz-h /MCF). Vous pouvez augmenter la température, allonger la durée d'exposition ou changer l'(les) insecte(s) cible(s)  et recalculer si vous ne voulez pas utiliser ces valeurs par défaut."
+    IDS_INVALID_CONC_TIME   "Erreur: le produit Concentration-Temps doit être supérieur ou égal à 0"
+    IDS_INVALID_DOSE        "Erreur: la dose doit être supérieure ou égale à 0."
+    IDS_INVALID_FUMIGATION_TYPE 
+                            "Erreur: type de fumigation non conforme. La valeur doit être %d ou %d."
+    IDS_WALNUTS             "Noix"
+    IDS_ALMONDS             "Amandes"
+    IDS_FIGS                "Figues"
+    IDS_FILBERTS_HAZELNUTS  "Noisettes"
+    IDS_PISTACHIOS          "Pistaches"
+    IDS_PRUNES              "Pruneaux"
+    IDS_RAISINS             "Raisins secs"
+    IDS_GRANARY_WEEVIL      "Sitophilus granarius"
+    IDS_WHOLE_GRAIN         "Grain entier"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NONE                "Aucun"
+    IDS_INVALID_COMMODITY   "Erreur: denrée non conforme. La valeur doit se situer entre %d et %d."
+    IDS_SPACE               "Espace"
+    IDS_COMMODITY           "Denrée"
+    IDS_LARVE_PUPAE_ADULT   "Bas"
+    IDS_EGG_ALL             "Haut"
+    IDS_NORMAL_ATMOSPHERIC_PRESSURE "Pression Atmosphérique Normale"
+    IDS_VACUUM              "Sous vide"
+    IDS_RICE_WEEVIL         "Sitophilus oryzae"
+    IDS_OTHER_COMMODITY     "Autre"
+    IDS_INVALID_ONEFOURTH_LENGTH 
+                            "Erreur: longueur en 3 mm non conforme. Celle-ci doit se situer entre %0.0f  et %0.0f. "
+    IDS_INVALID_ONEEIGHT_LENGTH 
+                            "Erreur: longueur en 6 mm non conforme. Celle-ci doit se situer entre  %0.0f  et %0.0f. "
+    IDS_LESSER_GRAIN_BORER  "Rhizopertha dominica"
+    IDS_INVALID_CYLINDER_PRES 
+                            "Erreur: pression de la bouteille non conforme. La valeur doit se situer entre %0.2f et %0.2f."
+    IDS_HIDE_BEETLE         "Dermestes maculatus\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DRUG_STORE_BEETLE   "Stegobium paniceum"
+    IDS_RUSTY_GRAIN_BEETLE  "Cryptolestes ferrugineus"
+    IDS_ALMOND_MOTH         "Ephestia cautella"
+    IDS_RODENTS             "Rongeurs (non autorisé en Europe)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CIGARETTE_BEETLE    "Lasioderma serricorne"
+    IDS_COWPEA_WEEVIL       "Callosobruchus obtectus"
+    IDS_BEAN_WEEVIL         "Acanthoscelides obtetus  "
+    IDS_COCA_MOTH           "Ephestia elutella"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "dpcalc"
+    IDS_CONFUSED_FLOUR_BEETLE "Tribolium confusum"
+    IDS_RED_FLOUR_BEETLE    "Tribolium castaneum"
+    IDS_SAWTOOTHED_GRAIN_BEETLE "Oryzaephilus surinamensis"
+    IDS_WAREHOUSE_BEETLE    "Trogoderma variabile"
+    IDS_INDIAN_MEAL_MOTH    "Plodia interpunctella"
+    IDS_MEDITERRANEAN_FLOUR_MOTH "Ephestia kuehniella"
+    IDS_CODLING_MOTH        "Cydia pomonella"
+    IDS_NAVEL_ORANGEWORM    "Amyelois transitella"
+    IDS_OTHER_BEETLE        "Altri coleotteri"
+    IDS_OTHER_MOTH          "Altri lepidotteri"
+    IDS_HIGH_CONC_ERROR     "Errore: Concentrazione superiore a quella permessa. Aumenta il tempo di esposizione e/o la stima del TdD"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALID_PEST        "Errore: Insetto bersaglio non valido. Inserisci valore compreso tra %d e %d "
+    IDS_INVALID_LIFE_STAGE  "Errore: Stadio vitale non valido. Inserisci valore %d o %d "
+    IDS_INVALID_HLT         "Errore: TdD non valido. Inserisci valore maggiore di %0.0f"
+    IDS_INVALID_TEMP        "Errore: Temperatura non valida. Inserisci valore compreso tra %0.2f e %0.2f"
+    IDS_INVALID_TIME        "Errore: Tempo non valido. Inserisci valore maggiore o uguale a %d"
+    IDS_INVALID_VOLUME      "Errore: Volume non valido. Inserisci valore maggiore o uguale a %0.0f"
+    IDS_INVALID_TREATMENT_TYPE 
+                            "Errore: Tipo di trattamento non valido. Inserisci valore %d o %d "
+    IDS_WARNING_CM_EGGS     "Attenzione: le uova del Baco rosa delle mele non sono il bersaglio della fumigazione"
+    IDS_WARNING_NOW_EGGS    "Attenzione: le uova della Tignola dell'arancia navel non sono il bersaglio della fumigazione"
+    IDS_WARNING_MIN_PEST_TEMP 
+                            "Attenzione: Temperatura inferiore all'intervallo di calcolo. Potrebbe non verificarsi un controllo ottimale"
+    IDS_INVALID_CYLINDER_TEMP 
+                            "Errore: Temperatura bombola non valida. Inserisci valore compreso tra %0.2f e %0.2f"
+    IDS_INVALID_HOSE_LENGTH "Errore: Lunghezza linea non valida. Inserisci valore compreso tra %0.0f e %0.0f"
+    IDS_INVALID_HOSE_DIAMETER 
+                            "Errore: Diametro interno linea non valido. Inserisci valore %0.3f, %0.3f o %0.3f"
+    IDS_WARNING_MAX_SHOOTING_RATE_LOW 
+                            "Attenzione: Tasso di erogazione massimo di 0 kg/min (libbre/min). Fai diminuire l'umidità relativa o aumenta la potenza del ventilatore"
+    IDS_INVALID_FAN_CAPACITY 
+                            "Errore: Portata ventilatore non valida. Inserisci valore compreso tra %0.2f e %0.2f"
+    IDS_INVALID_RELATIVE_HUMIDITY 
+                            "Errore: Umidità relativa non valida. Inserisci valore compreso tra %0.0f e %0.0f"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WARNING_SHOOTING_RATE_LOW 
+                            "Attenzione: i valori inseriti per Temperatura Bombola, Diametro Interno e Lunghezza della Linea di Erogazione determinano un tasso di Erogazione di ProFume così lento da non poter essere accuratamente stimato. Accresci il diametro interno e riduci la lunghezza della linea in modo da aumentare il tasso di erogazione di ProFume."
+    IDS_WARNING_CO_EXCEEDED "Attenzione: la Concentrazione Iniziale Target calcolata supera la concentrazione massima consentita, 128 g/m3 (once/103 p.c.). Per evitare di lavorare con tale concentrazione occorre accrescere la temperatura, estendere il periodo di esposizione o aumentare il TdD e ricalcolare il dosaggio."
+    IDS_WARNING_CT_EXCEEDED "Attenzione: il CT Iniziale Target calcolato costringe a superare il valore massimo consentito, %0.0f g-h/m3 (once-h/103 p.c.). Fumiguide è predefinita per non superare %0.0f g-h/m3 (once-h/103 p.c.). Per evitare di lavorare con tale concentrazione occorre aumentare la temperatura o cambiare insetto/insetti bersaglio e ricalcolare il dosaggio."
+    IDS_WARNING_CO_CT_EXCEEDED 
+                            "Attenzione: Concentrazione Iniziale Target e CT calcolati superano i limiti massimi consentiti, 128 g/m3 (once/103 p.c.) e %0.0f g-h/m3 (once/103 p.c.). Fumiguide è predefinita per non superare 128 g/m3 (once/103 p.c.) e %0.0f g-h/m3 (once/103 p.c.). Per evitare di lavorare con tali valori occorre accrescere la temperatura, aumentare il periodo di esposizione o il TdD oppure cambiare insetto/insetti bersaglio e ricalcolare il dosaggio."
+    IDS_INVALID_CONC_TIME   "Errore: Prodotto CT deve essere maggiore o uguale a 0"
+    IDS_INVALID_DOSE        "Errore: Dose deve essere maggiore o uguale a 0"
+    IDS_INVALID_FUMIGATION_TYPE 
+                            "Errore: Tipo di fumigazione non valido. Inserisci valore %d o %d "
+    IDS_WALNUTS             "Noci"
+    IDS_ALMONDS             "Mandorle"
+    IDS_FIGS                "Fichi"
+    IDS_FILBERTS_HAZELNUTS  "Nocciole"
+    IDS_PISTACHIOS          "Pistacchi"
+    IDS_PRUNES              "Prugne"
+    IDS_RAISINS             "Uvetta "
+    IDS_GRANARY_WEEVIL      "Sitophilus granarius\n"
+    IDS_WHOLE_GRAIN         "Grano intero"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NONE                "nessuno"
+    IDS_INVALID_COMMODITY   "Errore: Derrata non valida. Inserisci valore compreso tra %d e %d "
+    IDS_SPACE               "Spaziale"
+    IDS_COMMODITY           "Derrata"
+    IDS_LARVE_PUPAE_ADULT   "Basso"
+    IDS_EGG_ALL             "Alto"
+    IDS_NORMAL_ATMOSPHERIC_PRESSURE "pressione atmosferica"
+    IDS_VACUUM              "Sottovuoto"
+    IDS_RICE_WEEVIL         "Sitophilus oryzae"
+    IDS_OTHER_COMMODITY     "Altro"
+    IDS_INVALID_ONEFOURTH_LENGTH 
+                            "Errore: 6 mm  valore non valido, deve essere compreso tra %0.0f  e  %0.0f."
+    IDS_INVALID_ONEEIGHT_LENGTH 
+                            "Errore: 3 mm  valore non valido, deve essere compreso tra %0.0f  e  %0.0f."
+    IDS_LESSER_GRAIN_BORER  "Rhizopertha dominica"
+    IDS_INVALID_CYLINDER_PRES 
+                            "Errore: pressione del cilindro non valida il valore deve essere compreso tra %0.2f e %0.2f"
+    IDS_HIDE_BEETLE         "Dermestes maculatus"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DRUG_STORE_BEETLE   "Stegobium paniceum"
+    IDS_RUSTY_GRAIN_BEETLE  "Cryptolestes ferrugineus"
+    IDS_ALMOND_MOTH         "Ephestia cautella"
+    IDS_RODENTS             "roditori (non autorizzato in Europa)\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CIGARETTE_BEETLE    "Lasioderma serricorne"
+    IDS_COWPEA_WEEVIL       "Callosobruchus obtectus"
+    IDS_BEAN_WEEVIL         "Acanthoscelides obtetus  "
+    IDS_COCA_MOTH           "Ephestia elutella"
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "dpcalc.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

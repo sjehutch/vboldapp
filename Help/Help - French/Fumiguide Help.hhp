@@ -1,0 +1,46 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=Fumiguide Help FR.chm
+Contents file=Table of Contents.hhc
+Default Window=Main
+Default topic=keyinfo.htm
+Display compile progress=Yes
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x40c French (France)
+Title=ProFume* Gas Fumigant Fumiguide* Help
+
+[WINDOWS]
+Main="ProFume Fumigant Gas Fumiguide","Table of Contents.hhc","Index.hhk","keyinfo.htm","keyinfo.htm",,,,,0x22420,,0x3006,,,,,,,,0
+
+
+[FILES]
+keyinfo.htm
+CustomerInfo.htm
+DataInput.htm
+DosagePlan.htm
+Export Fumiguide Data.htm
+gettinghelp.htm
+glossary.htm
+GraphTab.htm
+HelpfulRefs.htm
+InstallRemove.htm
+IntroductionPlan.htm
+IntroHistory.htm
+legal.htm
+Monitoring Plan.htm
+MonitoringStatus.htm
+Navigating.htm
+OtherFeatures.htm
+Printing.htm
+running.htm
+security.htm
+Sharing Files.htm
+SysRequirements.htm
+uom.htm
+Fonts.htm
+RegionSettings.htm
+
+[INFOTYPES]
+

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Informations Cles">
+		<param name="Local" value="keyinfo.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Exigences syst&egrave;me minimales">
+			<param name="Local" value="SysRequirements.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="S&eacute;curit&eacute;/Code d’acc&egrave;s">
+			<param name="Local" value="security.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Installer et d&eacute;sinstaller ProFume Fumiguide">
+			<param name="Local" value="InstallRemove.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Unit&eacute;s de mesure">
+			<param name="Local" value="uom.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="D&eacute;marrer le programme et g&eacute;rer des fichiers">
+			<param name="Local" value="running.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Corriger la taille de police pour afficher Le Fumiguide ProFume compl&egrave;tement">
+			<param name="Local" value="Fonts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Divers niveaux d'assistance sont disponibles pour le Fumiguide ProFume">
+			<param name="Local" value="gettinghelp.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Naviguer dans ProFume Fumiguide">
+		<param name="Local" value="Navigating.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Info Client">
+			<param name="Local" value="CustomerInfo.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Plan de dosage">
+			<param name="Local" value="DosagePlan.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Plan d'injection">
+			<param name="Local" value="IntroductionPlan.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Plan de Monitoring">
+			<param name="Local" value="Monitoring Plan.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Historique Injection">
+			<param name="Local" value="IntroHistory.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Saisie des Concentrations">
+			<param name="Local" value="DataInput.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Suivi dosage">
+			<param name="Local" value="MonitoringStatus.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Onglet Graphique">
+			<param name="Local" value="GraphTab.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Autres fonctions">
+		<param name="Local" value="OtherFeatures.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Partager des donn&eacute;es ou des fichiers avec d'autres">
+			<param name="Local" value="Sharing Files.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Impression">
+			<param name="Local" value="Printing.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Exporter des donn&eacute;es Fumiguide et produire des rapports Fumigation">
+			<param name="Local" value="Export Fumiguide Data.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="R&eacute;f&eacute;rences utiles en Am&eacute;rique du Nord">
+		<param name="Local" value="HelpfulRefs.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Accord de licence logiciel">
+		<param name="Local" value="legal.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Glossaire">
+		<param name="Local" value="glossary.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

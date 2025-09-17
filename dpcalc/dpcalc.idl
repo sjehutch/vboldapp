@@ -1,0 +1,183 @@
+// dpcalc.idl : IDL source for dpcalc.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (dpcalc.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(8D969523-5811-4E9D-B292-9A16997F9C8B),
+		dual,
+		helpstring("IProFumeCalculator Interface"),
+		pointer_default(unique)
+	]
+	interface IProFumeCalculator : IDispatch
+	{
+      [id(1), helpstring("method GetPestTotal")] HRESULT GetPestTotal( [out, retval] int* Total );
+		
+      [id(2), helpstring("method GetPestString")] HRESULT GetPestString( [in] int Index, 
+                                                                         [out, retval] BSTR* Pest );
+		
+      [id(3), helpstring("method GetPestIndex")] HRESULT GetPestIndex( [in] BSTR* Pest, 
+                                                                       [out, retval] int* Index );
+		
+      [id(4), helpstring("method SetDosePest")] HRESULT SetDosePest( [in] int PestIndex, 
+                                                                     [in] int FumigationType, 
+                                                                     [in] int LifeStage, 
+                                                                     [in] int TreatmentType, 
+                                                                     [in] int Commodity,
+                                                                     [in] double HLT, 
+                                                                     [in] double Temp, 
+                                                                     [in] double TimeExposure, 
+                                                                     [in] double Volume, 
+																	 [in] double LoadFactor, 
+                                                                     [in] int IsComplete, 
+																	 [in] int ICounter, 
+                                                                     [out] BSTR* Error );
+		
+      [id(5), helpstring("method GetProfumeRequired")] HRESULT GetProfumeRequired( [out] double* ProfumeReq, 
+                                                                                   [out] double* Cylinders, 
+                                                                                   [out] double* Co, 
+                                                                                   [out] double* CT, 
+                                                                                   [out] double* Dose, 
+                                                                                   [out] BSTR* Error );
+		
+      [id(6), helpstring("method ClearDosePest")] HRESULT ClearDosePest();
+
+      [id(7), helpstring("method GetMonitorPointStatus")] HRESULT GetMonitorPointStatus( [in] double OriginalHLT, 
+                                                                                         [out] double* AchievedCT,
+                                                                                         [out] double* AchievedDose,
+                                                                                         [out] double* ActualOHLT,
+                                                                                         [out] double* ProjectedCT,
+                                                                                         [out] double* ProjectedFumigationTime,
+                                                                                         [out] double* FutureTargetConcentration,
+                                                                                         [out] double* FutureConcentration,
+                                                                                         [out] double* ElapsedTime,
+                                                                                         [out] DATE* LastPeakDateTime,
+                                                                                         [out] DATE* HLTDateTime, 
+                                                                                         [out] BSTR* Msg );
+
+      [id(8), helpstring("method SetConcentration")] HRESULT SetConcentration( [in] double Concentration, 
+                                                                               [in] DATE Date, 
+                                                                               [out] BSTR* Msg );
+
+      [id(9), helpstring("method ClearConcentrations")] HRESULT ClearConcentrations();
+		
+      [id(10), helpstring("method GetVersion")] HRESULT GetVersion( [out, retval] BSTR* Version );
+		
+      [id(11), helpstring("method GetPt2PtHlt")] HRESULT GetPt2PtHlt( [out] double* LastPeakHLT,
+                                                                      [out] DATE* LastPeakDateTime,
+                                                                      [out] DATE* HLTDateTime, 
+                                                                      [out] BSTR* Msg );
+		
+      [id(12), helpstring("method SetAreaMonitorPoint")] HRESULT SetAreaMonitorPoint( [in] double AchievedConcentrationTime, 
+                                                                                      [in] double AchievedDose,
+                                                                                      [in] double ElapsedTime,
+                                                                                      [in] double FutureTargetConcentration,
+                                                                                      [in] double FutureConcentration,
+                                                                                      [in] double Hlt,
+                                                                                      [in] double ProjectedConcentrationTime,
+                                                                                      [in] double ProjectedTime,
+                                                                                      [out] BSTR* Msg );
+		
+      [id(13), helpstring("method ClearAreaMonitorPoints")] HRESULT ClearAreaMonitorPoints();
+		
+      [id(14), helpstring("method GetAreaStatus")] HRESULT GetAreaStatus( [in]  double  TargetConcentrationTime,
+                                                                          [out] double* AchievedConcentrationTime, 
+                                                                          [out] double* AchievedDose, 
+                                                                          [out] double* Hlt,
+                                                                          [out] double* ProjectedConcentrationTime,
+                                                                          [out] double* ProjectedTime,
+                                                                          [out] double* MeanNTC,
+                                                                          [out] int*    Status,
+                                                                          [out] double* AddProfume,
+                                                                          [out] BSTR*   Msg );
+
+      [id(15), helpstring("method GetCommodityIndex")] HRESULT GetCommodityIndex( [in] BSTR* Commodity, 
+		                                                                            [out, retval] int* Index);
+
+      [id(16), helpstring("method GetCommodityString")] HRESULT GetCommodityString( [in] int Index, 
+                                                                                    [out, retval] BSTR* Commodity);
+
+      [id(17), helpstring("method GetCommodityTotal")] HRESULT GetCommodityTotal( [out, retval] int* Total );
+		
+      [id(18), helpstring("method GetLifeStageTotal")] HRESULT GetLifeStageTotal( [out, retval] int* Total );
+		
+      [id(19), helpstring("method GetLifeStageIndex")] HRESULT GetLifeStageIndex( [in] BSTR* LifeStage, 
+                                                                                  [out, retval] int* Index );
+		
+      [id(20), helpstring("method GetLifeStageString")] HRESULT GetLifeStageString( [in] int Index, 
+                                                                                    [out, retval] BSTR* LifeStage );
+		
+      [id(21), helpstring("method GetFumigationTypeTotal")] HRESULT GetFumigationTypeTotal( [out, retval] int* Total );
+
+		[id(22), helpstring("method GetFumigationTypeIndex")] HRESULT GetFumigationTypeIndex( [in] BSTR* FumigationType, 
+                                                                                            [out, retval] int* Index );
+		
+      [id(23), helpstring("method GetFumigationTypeString")] HRESULT GetFumigationTypeString( [in] int Index, 
+                                                                                              [out, retval] BSTR* FumigationType );
+		
+      [id(24), helpstring("method GetTreatmentTypeTotal")] HRESULT GetTreatmentTypeTotal( [out, retval] int* Total );
+
+		[id(25), helpstring("method GetTreatmentTypeIndex")] HRESULT GetTreatmentTypeIndex( [in] BSTR* TreatmentType, 
+                                                                                          [out, retval] int* Index );
+
+		[id(26), helpstring("method GetTreatmentTypeString")] HRESULT GetTreatmentTypeString( [in] int Index, 
+                                                                                            [out, retval] BSTR* TreatmentType );
+   };
+
+   [
+      object,
+      uuid(B11CCE60-3C64-4a1c-9650-63AC20D54E5D),
+      dual,
+      helpstring("IShootingLine Interface"),
+      pointer_default(unique)
+   ]
+   interface IShootingLine : IDispatch
+   {
+      [id(1), helpstring("method GetShootingRate")] HRESULT GetShootingRate( [in] double CylinderTemp,
+                                                                             [in] double OneFourthLength,
+                                                                             [in] double OneEightLength,
+																			 [in] double NumCylinders,
+																			 [in] double PressureChosen,
+                                                                             [out] double* ShootingRate,
+																			 [out] double* TimeToEmptyCylinder,
+                                                                             [out] BSTR* ErrMsg );
+
+      [id(2), helpstring("method GetMaxShootingRate")] HRESULT GetMaxShootingRate( [in] double FanCapacity, 
+                                                                                   [in] int RelativeHumidity, 
+                                                                                   [out] double* MaxShootingRate, 
+                                                                                   [out] BSTR* ErrMsg );
+   };
+
+[
+   uuid(0205C1E4-C47B-4000-A6EB-6AC5AAB10F11),
+   version(1.0),
+   helpstring("dpcalc 1.0 Type Library")
+]
+library DPCALCLib
+{
+   importlib("stdole32.tlb");
+   importlib("stdole2.tlb");
+
+   [
+      uuid(45DD8AD9-D339-4A0B-B6FE-260433177DD6),
+      helpstring("ProFumeCalculator Class")
+   ]
+   coclass ProFumeCalculator
+   {
+      [default] interface IProFumeCalculator;
+   };
+
+   [
+      uuid(A11B8F6C-BBA7-46ba-9250-358350DF9ABA),
+      helpstring("IShootingLine Class")
+   ]
+   coclass ShootingLine
+   {
+      [default] interface IShootingLine;
+   };
+
+};

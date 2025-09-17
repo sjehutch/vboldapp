@@ -1,0 +1,135 @@
+STDMETHODIMP CProFumeCalculator::GetProfumeRequired( double* ProfumeReq, 
+                                                     double* Cylinders, 
+                                                     double* Co, 
+                                                     double* CT, 
+                                                     double* Dose, 
+                                                     BSTR*   Error )
+{
+	AFX_MANAGE_STATE(AfxGetStaticModuleState())
+
+	// TODO: Add your implementation code here
+
+   // Iterate through the dose data array and calc the profume required
+   int nTotal = m_padataDose->GetSize();
+
+   DOSE_DATA dataDose;
+   
+   double dMaxProfumeReq = -1.0;
+   double dMaxDose = -1.0;
+   m_nMaxProfumeIndex = -1;
+   CString strWarning;
+
+   // Check what the temperature is for the calculation
+   // If it's less than 20°C then add a warning message
+   dataDose = m_padataDose->GetAt( 0 );
+
+   if( dataDose.dTemp < MIN_PEST_TEMP )
+   {
+      strWarning.LoadString( IDS_WARNING_MIN_PEST_TEMP );
+   }
+
+   for( int nIndex = 0; nIndex < nTotal; nIndex++ )
+   {
+      dataDose = m_padataDose->GetAt( nIndex );
+
+	  //12/23/04-YYT- Assign the passed parameter *CT to the datadose struc
+	  //if CT is = 0, it means there is NO user-defined CT, so we compute
+	  //else, we use the user-defined CT to calculate.
+	  dataDose.dConcentrationTime = *CT;
+	
+      if( !m_pcalcDose->GetProfumeRequired( &dataDose ) )
+      {
+         // There was a problem, so return an error right away
+         *Error = dataDose.strError.AllocSysString();
+
+         return S_FALSE;
+      }
+
+	   // Add any warning messages to the error string
+      if( !dataDose.strError.IsEmpty() )
+      {
+         // Before adding the warning to the existing error message
+         // let's ensure the message does not already exist.
+         // We don't want to have duplicate error messages
+         if( strWarning.Find( dataDose.strError ) < 0 )
+         {
+            // Ok, the general warning does not exist in our current warning message,
+            // However, there may be an embedded warning that should not be duplicated
+            // That warning deals with max items being exceeded
+            RemoveDuplicateWarning( IDS_WARNING_CO_EXCEEDED, dataDose.strError, strWarning );
+            RemoveDuplicateWarning( IDS_WARNING_CT_EXCEEDED, dataDose.strError, strWarning );
+            RemoveDuplicateWarning( IDS_WARNING_CO_CT_EXCEEDED, dataDose.strError, strWarning );
+            RemoveDuplicateWarning( IDS_WARNING_MIN_PEST_TEMP, dataDose.strError, strWarning );
+
+            if( !strWarning.IsEmpty() )
+            {
+               strWarning += _T( "\r\n" );
+            }
+
+            strWarning += dataDose.strError;
+         }
+      }
+
+      m_padataDose->SetAt( nIndex, dataDose );
+
+      // Check if this is the worst pest
+      if( dataDose.dProfumeReq >= dMaxProfumeReq )
+      {
+         if( dataDose.dProfumeReq == dMaxProfumeReq )
+         {
+            // Since the profume required is the same, lets ensure we select the 
+            // worst pest based on the dose required
+            // This occurs when the Co is maxed out at 128
+            if( dataDose.dDose > dMaxDose )
+            {
+               dMaxProfumeReq = dataDose.dProfumeReq;
+               dMaxDose = dataDose.dDose;
+
+               m_nMaxProfumeIndex = nIndex;
+            }
+            
+            // The dose is not greater than our current value, so don't update our values
+         }
+         else
+         {
+            // The amount of profume required is greater that our
+            // original value, so let's update the final index value
+            dMaxProfumeReq = dataDose.dProfumeReq;
+            dMaxDose = dataDose.dDose;
+
+            m_nMaxProfumeIndex = nIndex;
+         }
+      }
+   }
+
+   // Return the max value back to the caller
+   if( m_nMaxProfumeIndex > -1 )
+   {
+      dataDose = m_padataDose->GetAt( m_nMaxProfumeIndex );
+
+      *ProfumeReq = dataDose.dProfumeReq;
+      *Cylinders = dataDose.dCylindersReq;
+      *Co = dataDose.dInitialConcentration;
+      *CT = dataDose.dConcentrationTime;
+      *Dose = dataDose.dDose;
+
+	  // Jett 6/10/03 Keep C0 in our class m_dInitConc member variable. We will pass this
+	  // to Part II later on
+	  m_dInitConc = dataDose.dInitialConcentration;
+   }
+   else
+   {
+      *ProfumeReq = 0.0;
+      *Cylinders = 0.0;
+      *Co = 0.0;
+      *CT = 0.0;
+      *Dose = 0.0;
+
+	  m_dInitConc = 0;
+   }
+
+   // Send out the warning messages to the caller
+   *Error = strWarning.AllocSysString();
+   
+   return S_OK;
+}
